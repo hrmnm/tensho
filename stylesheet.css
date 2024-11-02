@@ -3,15 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
 
 html {
-  font-size: 106.25%;
+  font-size: 62.5%;
 }
 
 body {
+  margin: 0;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
   line-height: 2;
-  font-size: 17px;
-  color: #000;
+  font-size: 1.6rem;
+  color: #222;
 }
 
 /*===========================================================
@@ -54,22 +55,57 @@ ol li {
   padding: 0 3%;
 }
 
-.content {
-  padding: 20% 0;
+#main {
+  height: 100vh;
+  background: url(./img/bg_01.jpg) center/100% no-repeat;
+  position: relative;
 }
 
-.content a {
-  padding: 10px 30px 10px 10px;
-  color: #fff;
-  font-size: 1em;
-  text-decoration: none;
-  position: relative;
-  &:after {
-    width: 11.5px;
-    height: 12px;
-    background: url(./img/common/ico_arrow.png) center/100% no-repeat;
-    position: absolute;
-    top: calc(50% - 6px);
-    right: 10px;
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  .heading {
+    margin: 0 0 2em;
+    text-align: center;
+    h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      font-weight: bold;
+      position: relative;
+    }
+  }
+  .link_btn {
+    max-width: 300px;
+    margin: 0 auto;
+    a {
+      display: block;
+      padding: 10px 50px;
+      color: #fff;
+      font-size: 1.8rem;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 30px;
+      background-color: #fc5774;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: 23px;
+        height: 24px;
+        background: url(./img/common/ico_arrow.png) center/100% no-repeat;
+        position: absolute;
+        top: calc(50% - 12px);
+        right: 30px;
+      }
+    }
   }
 }
