@@ -58,8 +58,23 @@ ol li {
 .bg {
   width: 100vw;
   height: 100vh;
-  img {
-    object-fit: cover;
+  overflow: hidden;
+  .bg_slider {
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    .img_01 {
+      background: url(./img/bg_01.jpg) no-repeat;
+    }
+    .img_02 {
+      background: url(./img/bg_02.jpg) no-repeat;
+    }
   }
 }
 
