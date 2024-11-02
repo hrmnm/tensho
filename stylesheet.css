@@ -55,16 +55,19 @@ ol li {
   padding: 0 3%;
 }
 
-#main {
+.bg {
+  width: 100vw;
   height: 100vh;
-  background: url(./img/bg_01.jpg) center/100% no-repeat;
-  position: relative;
+  img {
+    object-fit: cover;
+  }
 }
 
 .content {
   width: 80%;
   margin: 0 auto;
   padding: 50px 20px;
+  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 50%;
@@ -78,7 +81,7 @@ ol li {
     text-align: center;
     h1 {
       margin: 0;
-      font-size: 2.6rem;
+      font-size: 2.4rem;
       font-weight: bold;
       position: relative;
     }
