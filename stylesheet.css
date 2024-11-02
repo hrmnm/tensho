@@ -137,6 +137,9 @@ img {
 
 /* 下層 */
 .column {
+  #main {
+    padding: 0 0 100px;
+  }
   .question {
     margin: 30px 0;
     text-align: center;
@@ -183,7 +186,7 @@ img {
     }
   }
   .pht {
-    padding: 0 0 50px;
+    padding: 0 0 40px;
     ul {
       li {
         margin: 0 0 50px;
@@ -205,6 +208,9 @@ img {
           position: absolute;
           top: 10px;
           left: 10px;
+        }
+        p {
+          text-align: center;
         }
       }
     }
